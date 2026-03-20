@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alone - Hair Salon</title>
+  <meta name="description" content="Alone（アローン）は、あなたらしい美しさを引き出すヘアサロンです。カット・カラー・パーマなど、お気軽にご相談ください。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ========== Header ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">Alone</a>
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav-list">
+          <li><a href="#concept" class="header__nav-link">Concept</a></li>
+          <li><a href="#menu" class="header__nav-link">Menu</a></li>
+          <li><a href="#staff" class="header__nav-link">Staff</a></li>
+          <li><a href="#access" class="header__nav-link">Access</a></li>
+        </ul>
+        <div class="header__nav-actions">
+          <div class="header__sns">
+            <a href="https://www.instagram.com/?hl=ja" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="header__sns-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.line.me/ja/" target="_blank" rel="noopener noreferrer" aria-label="LINE" class="header__sns-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .348-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .349-.281.63-.63.63h-2.386a.63.63 0 0 1-.63-.63V8.108a.63.63 0 0 1 .63-.63h2.386c.349 0 .63.282.63.63 0 .349-.281.631-.63.631H17.61v1.125h1.755zm-3.855 3.016a.63.63 0 0 1-.63.63.629.629 0 0 1-.51-.26l-2.443-3.317v2.947a.63.63 0 0 1-1.26 0V8.108a.63.63 0 0 1 .63-.63c.2 0 .385.096.51.26l2.443 3.317V8.108a.63.63 0 0 1 1.26 0v4.771zm-5.741 0a.63.63 0 0 1-1.26 0V8.108a.63.63 0 0 1 1.26 0v4.771zm-2.466.63H4.917a.63.63 0 0 1-.63-.63V8.108a.63.63 0 0 1 1.26 0v4.141h1.756c.348 0 .63.283.63.63 0 .349-.282.63-.63.63M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+            </a>
+          </div>
+          <a href="https://beauty.hotpepper.jp/" target="_blank" rel="noopener noreferrer" class="btn btn--primary header__reserve-btn">ご予約はこちら</a>
+        </div>
+      </nav>
+      <button class="header__hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== Hero ========== -->
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <h1 class="hero__title">あなたらしさを<br>引き出す場所</h1>
+        <p class="hero__desc">髪のこと、気軽に相談できるサロンです。<br>カット・カラー・トリートメント、なんでもお任せください。</p>
+        <a href="https://beauty.hotpepper.jp/" target="_blank" rel="noopener noreferrer" class="btn btn--casual hero__cta">ご予約はこちら</a>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__image-main">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=800&fit=crop" alt="サロン内装" class="placeholder-image" style="aspect-ratio: 3/4;">
+        </div>
+        <div class="hero__image-sub">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=400&fit=crop" alt="ヘアスタイル" class="placeholder-image" style="aspect-ratio: 1/1;">
+        </div>
+        <div class="hero__deco hero__deco--circle"></div>
+        <div class="hero__deco hero__deco--dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Concept ========== -->
+  <section class="section concept" id="concept">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">Concept</p>
+        <h2 class="section__title">コンセプト</h2>
+      </div>
+      <div class="concept__body">
+        <div class="concept__text">
+          <h3 class="concept__heading">一人ひとりの<br>「なりたい」に寄り添う</h3>
+          <p class="concept__description">
+            Aloneは、お客様一人ひとりの個性やライフスタイルに合わせた
+            スタイルをご提案するヘアサロンです。<br><br>
+            髪質やお顔の形、普段のスタイリングのしやすさまで考慮し、
+            あなただけのベストなヘアスタイルを一緒に見つけます。<br><br>
+            リラックスできる空間で、日常を忘れるひとときをお過ごしください。
+          </p>
+        </div>
+        <div class="concept__image">
+          <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800&h=600&fit=crop" alt="コンセプトイメージ" class="placeholder-image" style="aspect-ratio: 4/3;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Menu ========== -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">Menu</p>
+        <h2 class="section__title">メニュー・料金</h2>
+      </div>
+      <div class="menu__grid">
+        <!-- Cut -->
+        <div class="menu__card">
+          <h3 class="menu__card-title">Cut</h3>
+          <dl class="menu__list">
+            <div class="menu__item">
+              <dt>カット</dt>
+              <dd>&yen;6,600</dd>
+            </div>
+            <div class="menu__item">
+              <dt>カット + シャンプー・ブロー</dt>
+              <dd>&yen;7,700</dd>
+            </div>
+            <div class="menu__item">
+              <dt>前髪カット</dt>
+              <dd>&yen;1,100</dd>
+            </div>
+            <div class="menu__item">
+              <dt>キッズカット（小学生以下）</dt>
+              <dd>&yen;4,400</dd>
+            </div>
+          </dl>
+        </div>
+        <!-- Color -->
+        <div class="menu__card">
+          <h3 class="menu__card-title">Color</h3>
+          <dl class="menu__list">
+            <div class="menu__item">
+              <dt>ワンカラー</dt>
+              <dd>&yen;7,700〜</dd>
+            </div>
+            <div class="menu__item">
+              <dt>リタッチカラー</dt>
+              <dd>&yen;6,600〜</dd>
+            </div>
+            <div class="menu__item">
+              <dt>ハイライト</dt>
+              <dd>&yen;5,500〜</dd>
+            </div>
+            <div class="menu__item">
+              <dt>ブリーチ</dt>
+              <dd>&yen;8,800〜</dd>
+            </div>
+          </dl>
+        </div>
+        <!-- Perm -->
+        <div class="menu__card">
+          <h3 class="menu__card-title">Perm</h3>
+          <dl class="menu__list">
+            <div class="menu__item">
+              <dt>パーマ</dt>
+              <dd>&yen;8,800〜</dd>
+            </div>
+            <div class="menu__item">
+              <dt>デジタルパーマ</dt>
+              <dd>&yen;13,200〜</dd>
+            </div>
+            <div class="menu__item">
+              <dt>ストレートパーマ</dt>
+              <dd>&yen;13,200〜</dd>
+            </div>
+            <div class="menu__item">
+              <dt>縮毛矯正</dt>
+              <dd>&yen;16,500〜</dd>
+            </div>
+          </dl>
+        </div>
+        <!-- Treatment (Featured) -->
+        <div class="menu__card menu__card--featured">
+          <div class="menu__featured-header">
+            <p class="menu__featured-label">Special Menu</p>
+            <h3 class="menu__card-title">Treatment</h3>
+            <p class="menu__featured-subtitle">次世代オーダーメイドトリートメント</p>
+            <p class="menu__featured-desc">一人ひとりの髪質・ダメージレベルを診断し、最適な成分を組み合わせる完全オーダーメイド処方。<br>サロン帰りの仕上がりが長く続く、ワンランク上のヘアケア体験を。</p>
+          </div>
+          <dl class="menu__list menu__list--featured">
+            <div class="menu__item">
+              <dt>オーダーメイドトリートメント</dt>
+              <dd>&yen;8,800〜</dd>
+            </div>
+            <div class="menu__item">
+              <dt>プレミアムトリートメント</dt>
+              <dd>&yen;5,500〜</dd>
+            </div>
+            <div class="menu__item">
+              <dt>トリートメント</dt>
+              <dd>&yen;3,300〜</dd>
+            </div>
+            <div class="menu__item">
+              <dt>ヘッドスパ</dt>
+              <dd>&yen;4,400〜</dd>
+            </div>
+            <div class="menu__item">
+              <dt>ヘッドスパ + トリートメント</dt>
+              <dd>&yen;6,600〜</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+      <p class="menu__note">※ 料金はすべて税込です。髪の長さや状態により変動する場合がございます。</p>
+    </div>
+  </section>
+
+  <!-- ========== Staff ========== -->
+  <section class="section staff" id="staff">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">Staff</p>
+        <h2 class="section__title">スタッフ</h2>
+      </div>
+      <div class="staff__card">
+        <div class="staff__image">
+          <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=400&h=400&fit=crop" alt="オーナー写真" class="placeholder-image placeholder-image--circle">
+        </div>
+        <div class="staff__info">
+          <p class="staff__role">Owner / Stylist</p>
+          <h3 class="staff__name">オーナー名</h3>
+          <p class="staff__bio">
+            美容業界で10年以上の経験を持ち、お客様一人ひとりに合った
+            スタイルを提案することを大切にしています。<br><br>
+            「また来たい」と思っていただけるサロンを目指し、
+            技術と空間づくりの両方にこだわっています。
+            お気軽にご相談ください。
+          </p>
+          <a href="https://www.instagram.com/?hl=ja" target="_blank" rel="noopener noreferrer" class="staff__sns">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Access ========== -->
+  <section class="section access" id="access">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">Access</p>
+        <h2 class="section__title">アクセス</h2>
+      </div>
+      <div class="access__body">
+        <div class="access__map">
+          <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&h=450&fit=crop" alt="地図イメージ" class="placeholder-image" style="aspect-ratio: 16/9;">
+        </div>
+        <div class="access__info">
+          <table class="access__table">
+            <tr>
+              <th>サロン名</th>
+              <td>Alone</td>
+            </tr>
+            <tr>
+              <th>住所</th>
+              <td>〒150-0001<br>東京都渋谷区神宮前0-0-0<br>サンプルビル 2F</td>
+            </tr>
+            <tr>
+              <th>TEL</th>
+              <td><a href="tel:03-0000-0000">03-0000-0000</a></td>
+            </tr>
+            <tr>
+              <th>営業時間</th>
+              <td>10:00 - 20:00（最終受付 19:00）</td>
+            </tr>
+            <tr>
+              <th>定休日</th>
+              <td>毎週火曜日・第3月曜日</td>
+            </tr>
+            <tr>
+              <th>アクセス</th>
+              <td>表参道駅 A1出口より徒歩5分</td>
+            </tr>
+          </table>
+          <a href="https://beauty.hotpepper.jp/" target="_blank" rel="noopener noreferrer" class="btn btn--primary access__reserve-btn">ご予約はこちら</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#" class="footer__logo">Alone</a>
+        <nav class="footer__nav">
+          <a href="#concept">Concept</a>
+          <a href="#menu">Menu</a>
+          <a href="#staff">Staff</a>
+          <a href="#access">Access</a>
+        </nav>
+        <div class="footer__sns">
+          <a href="https://www.instagram.com/?hl=ja" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__sns-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.line.me/ja/" target="_blank" rel="noopener noreferrer" aria-label="LINE" class="footer__sns-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .348-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .349-.281.63-.63.63h-2.386a.63.63 0 0 1-.63-.63V8.108a.63.63 0 0 1 .63-.63h2.386c.349 0 .63.282.63.63 0 .349-.281.631-.63.631H17.61v1.125h1.755zm-3.855 3.016a.63.63 0 0 1-.63.63.629.629 0 0 1-.51-.26l-2.443-3.317v2.947a.63.63 0 0 1-1.26 0V8.108a.63.63 0 0 1 .63-.63c.2 0 .385.096.51.26l2.443 3.317V8.108a.63.63 0 0 1 1.26 0v4.771zm-5.741 0a.63.63 0 0 1-1.26 0V8.108a.63.63 0 0 1 1.26 0v4.771zm-2.466.63H4.917a.63.63 0 0 1-.63-.63V8.108a.63.63 0 0 1 1.26 0v4.141h1.756c.348 0 .63.283.63.63 0 .349-.282.63-.63.63M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+          </a>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; 2026 Alone. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ========== Chatbot ========== -->
+  <div class="chatbot" id="chatbot">
+    <button class="chatbot__toggle" id="chatbot-toggle" aria-label="チャットを開く">
+      <svg class="chatbot__toggle-icon chatbot__toggle-icon--open" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+      <svg class="chatbot__toggle-icon chatbot__toggle-icon--close" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <div class="chatbot__window" id="chatbot-window">
+      <div class="chatbot__header">
+        <div class="chatbot__header-info">
+          <span class="chatbot__header-name">Alone アシスタント</span>
+          <span class="chatbot__header-status">オンライン</span>
+        </div>
+      </div>
+      <div class="chatbot__messages" id="chatbot-messages">
+        <div class="chatbot__message chatbot__message--bot">
+          <div class="chatbot__message-content">
+            こんにちは！美容室Aloneへようこそ。メニューや料金、ご予約についてなど、お気軽にご質問ください。
+          </div>
+        </div>
+      </div>
+      <div class="chatbot__input-area">
+        <input type="text" class="chatbot__input" id="chatbot-input" placeholder="メッセージを入力..." autocomplete="off">
+        <button class="chatbot__send" id="chatbot-send" aria-label="送信">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
