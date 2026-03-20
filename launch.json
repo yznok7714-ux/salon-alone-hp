@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "csks-site",
+      "runtimeExecutable": "/usr/bin/ruby",
+      "runtimeArgs": ["/tmp/csks-server.rb"],
+      "port": 8080,
+      "env": {
+        "ANTHROPIC_API_KEY": "${env:ANTHROPIC_API_KEY}"
+      }
+    }
+  ]
+}
