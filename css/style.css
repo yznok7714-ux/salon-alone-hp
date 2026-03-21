@@ -1171,10 +1171,14 @@ body.nav-open {
   border-top: 1px solid var(--color-beige);
   background: var(--color-white);
   align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
 }
 
 .chatbot__input {
   flex: 1;
+  min-width: 0;
   padding: 10px 14px;
   border: 1px solid var(--color-beige);
   border-radius: 24px;
@@ -1183,6 +1187,7 @@ body.nav-open {
   outline: none;
   transition: border-color 0.3s;
   color: var(--color-text);
+  box-sizing: border-box;
 }
 
 .chatbot__input:focus {
@@ -1238,15 +1243,28 @@ body.nav-open {
     bottom: 0;
     width: 100%;
     height: 100%;
+    height: 100dvh; /* iOS Safari対応 */
     border-radius: 0;
+    box-sizing: border-box;
   }
 
   .chatbot__input {
     font-size: 16px; /* iOS自動ズーム防止 */
+    min-width: 0; /* flexで潰れるように */
   }
 
   .chatbot__input-area {
-    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    padding: 10px 12px;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom));
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .chatbot__send {
+    width: 44px;
+    height: 44px;
+    min-width: 44px; /* Appleタッチターゲット推奨サイズ */
   }
 
   .chatbot__close {
