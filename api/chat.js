@@ -33,7 +33,7 @@ export default async function handler(req, res) {
         "anthropic-version": "2023-06-01",
       },
       body: JSON.stringify({
-        model: "claude-2.1", // ★ここだけ後で変えてもOK
+        model: "claude-sonnet-4-20250514", // ★ここだけ後で変えてもOK
         max_tokens: 512,
         messages: messages.map((m) => ({
           role: m.role === "assistant" ? "assistant" : "user",
