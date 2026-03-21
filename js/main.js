@@ -94,6 +94,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   chatToggle.addEventListener("click", toggleChat);
 
+  // 閉じるボタン（モバイル用）
+  const chatClose = document.getElementById("chatbot-close");
+  if (chatClose) {
+    chatClose.addEventListener("click", function () {
+      chatWindow.classList.remove("is-open");
+      iconOpen.style.display = "block";
+      iconClose.style.display = "none";
+    });
+  }
+
   function addMessage(text, sender) {
     const msg = document.createElement("div");
     msg.className = `chatbot__message chatbot__message--${sender}`;
